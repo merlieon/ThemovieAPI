@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title> Movies </title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Overview</th>
+                <th>Release Date</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr th:each="movie : ${movies}">
+                <td><span th:text = "${movie.original_title}"/></td>
+                <td id="overview_column"><span th:text = "${movie.overview}"/></td>
+                <td><span th:text = "${movie.release_date}"/></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

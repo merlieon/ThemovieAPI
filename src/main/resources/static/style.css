@@ -1,3 +1,15 @@
-body{
+#head_title{
     color: RED;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+}
+
+td{
+    padding: 5px;
+}
+
+#overview_column{
+    max-width: 700px;
 }

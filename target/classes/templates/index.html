@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <h1 id="head_title">Movie Database</h1>
+        <form action="#" th:action="@{/movies}" th:object="${movies}" method="get">
+            <input type="submit" value="Visa alla filmer">
+        </form>
+
+    </body>
+</html>
